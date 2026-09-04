@@ -1,0 +1,144 @@
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.page-title {
+  font-size: 2.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.balance-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.balance-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin: 0 0 0.25rem;
+}
+
+.balance-amount {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.balance-amount.negative {
+  color: #c0392b;
+}
+
+.balance-amount.positive {
+  color: var(--accent-dark);
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.filter-group label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.filter-group select {
+  font-family: var(--font-body);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-primary);
+}
+
+.transaction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.transaction-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.transaction-row:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.transaction-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-desc {
+  font-weight: 600;
+}
+
+.transaction-category {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.transaction-amount {
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+.transaction-amount.income {
+  color: var(--positive);
+}
+
+.transaction-amount.expense {
+  color: var(--negative);
+}
+
+.empty-state-first {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-secondary);
+}
+
+.empty-state-first p {
+  margin-bottom: 1rem;
+}
+
+.empty-state {
+  color: var(--text-secondary);
+  font-style: italic;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.clear-all-row {
+  margin-bottom: 1.5rem;
+}

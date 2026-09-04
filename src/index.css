@@ -1,0 +1,61 @@
+:root {
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="light"] {
+  --bg-gradient-start: #eef3e6;
+  --bg-gradient-end: #cfe0c2;
+  --surface: #ffffff;
+  --surface-accent: #b7d99a;
+  --text-primary: #1f2a1a;
+  --text-secondary: #4a5a42;
+  --accent: #6b9b4a;
+  --accent-dark: #4d7834;
+  --border: rgba(0, 0, 0, 0.15);
+  --negative: #c5413a;
+  --positive: #4d7834;
+}
+
+[data-theme="dark"] {
+  --bg-gradient-start: #19271e;
+  --bg-gradient-end: #152019;
+  --surface: #293631;
+  --surface-accent: #68725f;
+  --text-primary: #ede8de;
+  --text-secondary: #b0a996;
+  --accent: #9ed17a;
+  --accent-dark: #74a852;
+  --border: rgba(255, 255, 255, 0.16);
+  --negative: #e07a5f;
+  --positive: #9ed17a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: linear-gradient(160deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
