@@ -77,7 +77,7 @@ function Summary() {
         </div>
       </div>
 
-      <h2>Spending by Category</h2>
+      <h2>Expenses by Category</h2>
       {renderBreakdown(expensesByCategory, totalExpenses, 'expenses')}
 
       <h2>Income by Category</h2>
