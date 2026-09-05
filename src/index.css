@@ -18,6 +18,7 @@
   --border: rgba(0, 0, 0, 0.15);
   --negative: #c5413a;
   --positive: #4d7834;
+  --dot-color: rgba(0, 0, 0, 0.12);
 }
 
 [data-theme="dark"] {
@@ -32,6 +33,7 @@
   --border: rgba(255, 255, 255, 0.16);
   --negative: #e07a5f;
   --positive: #9ed17a;
+  --dot-color: rgba(255, 255, 255, 0.07);
 }
 
 * {
@@ -42,7 +44,10 @@ body {
   margin: 0;
   font-family: var(--font-body);
   color: var(--text-primary);
-  background: linear-gradient(160deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  background-image: radial-gradient(var(--dot-color) 1.5px, transparent 1.5px),
+    linear-gradient(160deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  background-size: 48px 48px, cover;
+  background-attachment: fixed, fixed;
   min-height: 100vh;
   transition: background 0.3s ease, color 0.3s ease;
 }
